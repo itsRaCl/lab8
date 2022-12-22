@@ -12,6 +12,8 @@ int main(){
 	int x;
 	printf("Enter the element to be searched: ");
 	scanf("%d", &x);
-	printf("%d\n", linearSearch(n , arr, x));
+	int i =  linearSearch(n , arr, x);
+	if (i!=-1) printf("Element found at position: %d\n",i);
+	else printf("Element not found\n");
 	return 0;
 }
